@@ -40,6 +40,34 @@ body        = '\033[0m'
 
 # //// BODY ///// 
 
+def build_file(which: str): 
+    pass
+
+    # REQUIRED
+    # process.get_metadata()
+    # process.get_template()
+
+    # Customise your markdown and extensions!
+    process.basic_md()
+    process.callouts()
+    process.ids()
+    process.logic()
+    process.rich_tags()
+    # process.document_tags()
+
+    # add your extension calls here, and its contents in the process: class. 
+
+    # you can also use this to customise your markdown for yoyure exact needs!!
+    # we plan to cover
+    # daring fireball md
+    # kramdown
+    # obsidan md
+    # defintions
+    # etc!
+
+    log.info(f"{which} finished building!")
+
+
 def get_partials(): 
     pass
 
@@ -55,15 +83,35 @@ def handle_logic(statement: str):
     # if it needs furhrter parsing without that, its an advanced variable. 
     # example: {{date:DD MMM YYYY}}
 
-def build_file(which: str): 
-    pass
-
 def process_manager(): 
-    pass
+    build_process()
 
     # when file returned: 
     #print(f'{success}{files_built}{addinfo}/{body}{files_to_build}{addinfo} {addinfo}({percent_complete}%){body} {child} {success} Finished Building{body}')
-    
+
+def build_process(): 
+
+    build_file()
+
+class process: 
+
+    def basic_md(): 
+        pass
+
+    def callouts(): 
+        pass
+
+    def ids(): 
+        pass
+
+    def logic(): 
+        pass
+
+    def rich_tags(): 
+        pass
+
+
+    # Paste extension functions here!
 
 # ///////////////
 
